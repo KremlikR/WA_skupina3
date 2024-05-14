@@ -61,7 +61,7 @@
 
 
 #closeIframe {
-    z-index: 100;
+   
     position: absolute;
     float: right;
     right: 0;
