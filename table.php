@@ -24,7 +24,7 @@ include "helper.php";
     
     <link rel="stylesheet" href="./css/forms-style.css?v=<?php echo filemtime("./css/forms-style.css") ?>">
     <link rel="stylesheet" href="./css/style.css?v=<?php echo filemtime("./css/style.css") ?>">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="vendor/jquery.dataTables.js"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -247,7 +247,7 @@ function myFunction() {
                     <?php
                     foreach ($array_columns as $column_name) {
                     ?>
-                        <td class="<?php echo $column_name; ?> click"><?php echo $row[$column_name]; ?></td>
+                        <td class="<?php echo $column_name; ?> click"><?php echo ($row[$column_name]=="null") ? "" : $row[$column_name]; ?></td>
                     <?php
                     }
                     ?>
