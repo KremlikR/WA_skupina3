@@ -123,6 +123,7 @@ tr th:nth-child(2) {
     font-weight: 600;
     text-decoration: none;
     transition: box-shadow 200ms ease-out;
+    
 
     
 }
@@ -181,7 +182,8 @@ label>input {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    
+    float:right;
+    margin-right:2vw;
     /* align-items: center; */
 }
 
