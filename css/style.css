@@ -25,6 +25,11 @@
     }
 
 
+#basic_filter input{
+    width: 8vw;
+}
+
+
 
 /*hamburger*/                   /*Rozbalovací okno = Hamburger menu slouží k efektivitě a uložení obsahu který se na stránce vyskytuje. */
 .menuButton {
